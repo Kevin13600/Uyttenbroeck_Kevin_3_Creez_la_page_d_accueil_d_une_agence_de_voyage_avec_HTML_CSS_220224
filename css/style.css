@@ -11,8 +11,8 @@
     --pur-white-color: #FFFFFF;
 }
 
-::-webkit-input-placeholder { /* Pour les navigateurs WebKit */
-    color: #000000; /* Couleur du texte du placeholder */
+::placeholder { 
+    color: #000000; 
 }
 
 .fa-solid {
