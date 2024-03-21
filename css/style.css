@@ -8,6 +8,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --pur-white-color: #FFFFFF;
 }
 
 ::-webkit-input-placeholder { /* Pour les navigateurs WebKit */
@@ -56,13 +57,13 @@ header {
     Padding: 30px 50px 30px 0; 
 }
 
-.logo-png {
-    width: 61.09px;
+.header-logo-png {
+    width: 61px;
     height: 19px;
 }
 
 
-.menu {
+.header-menu {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -70,17 +71,10 @@ header {
     height: 35px; 
 }
 
-
-
-.menu-btn:hover {
+.header-menu-btn:hover {
     color: var(--main-color);
-    border-top: solid 0.125rem var(--main-color);
-    padding-top: 0.875rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+    border-top: solid 2px var(--main-color);
+    padding-top: 14px;
 }
 
 /* form info-group */
@@ -96,23 +90,21 @@ a {
     gap: 8px;
 }
 
-.info-group-headline h2 {
-    margin: 0;
-}
-
+.info-group-headline h2,
 .info-group-headline p {
     margin: 0;
 }
 
+
 .info-group-search-bar {
+    height: 49px;
     margin-top: 35px;
     display: flex;
-    height: 49px;
     gap: 24px;
 }
 
 
-.info-group-search-bar input {
+.info-group-search-input {
     width: 147px;
     align-self: center;
     border: none;
@@ -120,16 +112,21 @@ a {
 }
 
 
-.search-button-desktop {
-    color: #ffffff;
+.info-group-search-button-desktop {
+    width: 132px;
     background-color: var(--main-color);
+    color: var(--pur-white-color);
     border: none;
     border-radius: 0px 15px 15px 0px;
-    width: 132px;
+}
+
+.info-group-search-button-desktop:hover {
+    cursor: pointer;
 }
 
 
-.info-group-search-bar input, button {
+.info-group-search-input,
+.info-group-search-button-desktop {
     font-weight: 700;
     font-size: 18px;
 }
@@ -154,7 +151,7 @@ a {
     gap: 15px;
 }
 
-.box-filter {
+.info-group-box-filter {
     Padding: 15px 19px;
     border: 1px solid var(--filter-bg-color);
     border-radius: 25px;
@@ -165,7 +162,7 @@ a {
     font-size: 17px;
 }
 
-.box-filter:hover {
+.info-group-box-filter:hover {
     background-color: var(--filter-bg-color);
 }
 
@@ -175,29 +172,7 @@ a {
     align-items: center;
     gap: 10px;
 }
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -210,6 +185,14 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
 }
 
 .hebergements-title, .populaires-title {
@@ -389,13 +372,11 @@ footer {
 
 
 @media screen and (min-width:1024px) {
-    .search-button-mobile {
+    .info-group-search-button-mobile {
         display: none;
     }
 
 }
-
-
 
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -403,7 +384,7 @@ footer {
     
     /* info-group */
 
-    .search-button-mobile {
+    .info-group-search-button-mobile {
         display: none;
     }
 
@@ -472,7 +453,8 @@ footer {
         padding: 0;
     }
     
-    
+    /* header */
+
     header {
         flex-direction: column;
         align-items: center;
@@ -483,24 +465,24 @@ footer {
         Padding: 30px; 
     }
 
-    .menu {
+    .header-menu {
         align-items: start;
         width: 100%;
         text-align: center;
         gap: 0;
     }
 
-    .menu-btn {
+    .header-menu-btn {
         width: 50%;
         border-bottom: 0.938rem;
     }
 
-    .menu-btn:hover {
+    .header-menu-btn:hover {
     color: var(--main-color);
     border-bottom: solid 0.125rem var(--main-color);
     border-top: none;
     padding-top: 0;
-    padding-bottom: 0.875rem; 
+    padding-bottom: 14px; 
     }
 
     /* info-group */
@@ -510,11 +492,11 @@ footer {
         grid-template-columns: 1fr 2fr 1fr;
     }
     
-    .search-button-desktop {
+    .info-group-search-button-desktop {
         display: none;
     }
 
-    .search-button-mobile {
+    .info-group-search-button-mobile {
         width: 49px;
         height: 49px;
         background-color: var(--main-color);
@@ -525,7 +507,7 @@ footer {
         left: 15px;
         }
 
-        .search-button-mobile i {
+        .info-group-search-button-mobile i {
             color: #FFFFFF;
         }
 
@@ -542,7 +524,7 @@ footer {
             width: 100%;
         }
 
-       .box-filter {
+       .info-group-box-filter {
         align-self: center;
        }
 

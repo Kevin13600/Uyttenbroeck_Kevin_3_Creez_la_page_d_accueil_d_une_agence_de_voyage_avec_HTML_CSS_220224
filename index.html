@@ -24,11 +24,11 @@
     <div class="main-container">
       <header>
         <span class="header-logo">
-          <img src="images/logo/Booki.png" alt="logo booki" class="logo-png" />
+          <img src="images/logo/Booki.png" alt="logo booki" class="header-logo-png" />
         </span>
-        <nav class="menu">
-          <a href="#" class="menu-btn">hébergements</a>
-          <a href="#" class="menu-btn">Activités</a>
+        <nav class="header-menu">
+          <a href="#hebergements" class="header-menu-btn">hébergements</a>
+          <a href="#populaires" class="header-menu-btn">Activités</a>
         </nav>
       </header>
 
@@ -42,33 +42,33 @@
             <img src="images/logo/map-maker.svg" alt="logo-map" />
             <input
               type="text"
-              class="search-input"
+              class="info-group-search-input"
               name="research"
               placeholder="Marseille, France"
             />
-            <button type="submit" class="search-button-desktop">
+            <button type="submit" class="info-group-search-button-desktop">
               Rechercher
             </button>
-            <button type="submit" class="search-button-mobile">
+            <button type="submit" class="info-group-search-button-mobile">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
           <div class="info-group-filter">
             <h2>Filtres</h2>
             <div class="info-group-box">
-              <button class="box-filter">
+              <button class="info-group-box-filter">
                 <i class="fa-solid fa-money-bill-wave"></i>
                 <span>Économique</span>
               </button>
-              <button class="box-filter">
+              <button class="info-group-box-filter">
                 <i class="fa-solid fa-person"></i>
                 <span>Familial</span>
               </button>
-              <button class="box-filter">
+              <button class="info-group-box-filter">
                 <i class="fa-solid fa-heart"></i>
                 <span>romantique</span>
               </button>
-              <button class="box-filter">
+              <button class="info-group-box-filter">
                 <i class="fa-solid fa-fire"></i>
                 <span>Nos pépites</span>
               </button>
@@ -81,7 +81,7 @@
         </section>
         <section class="hebergements-and-populaires">
           <section class="hebergements">
-            <h2 class="hebergements-title">Hébergements à Marseille</h2>
+            <h2 id="hebergements" class="hebergements-title">Hébergements à Marseille</h2>
             <div class="hebergements-cards">
               <a href="#" class="hebergements-link">
                 <article class="hebergements-card">
@@ -251,7 +251,7 @@
           </section>
           <section class="populaires">
             <div class="populaires-section-title">
-              <h2 class="populaires-title">Les plus populaires</h2>
+              <h2 id="populaires" class="populaires-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="populaires-cards">
