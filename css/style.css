@@ -216,7 +216,7 @@ header {
 .hebergements-card {
     display: flex;
     flex-direction: column;
-    border: 5px solid #ffffff;
+    border: 5px solid var(--pur-white-color);
     border-radius: 20px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10); 
     padding-bottom: 15px;
@@ -270,7 +270,7 @@ header {
     height: 146px;
     display: flex;
     border-radius: 20px;
-    border: 5px solid #ffffff;
+    border: 5px solid var(--pur-white-color);
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10);
 }
 
@@ -343,7 +343,7 @@ header {
 
 .activite-card .activite-card-subtitle {
     padding: 20px 19px 20px 19px;
-    background-color: #FFFFFF;
+    background-color: var(--pur-white-color);
 }
 
 /* footer */
@@ -508,7 +508,7 @@ footer {
         }
 
         .info-group-search-button-mobile i {
-            color: #FFFFFF;
+            color: var(--pur-white-color);
         }
 
 
