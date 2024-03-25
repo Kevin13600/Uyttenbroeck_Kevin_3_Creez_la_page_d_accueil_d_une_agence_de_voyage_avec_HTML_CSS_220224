@@ -182,6 +182,7 @@ header {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+    margin-top: 35px;
     display: flex;
     justify-content: space-between;
 }
@@ -201,8 +202,14 @@ header {
     color: var(--main-bg-color)
 }
 
+.hebergements-card,
+.populaires-card {
+    background-color: var(--pur-white-color);
+}
+
 .hebergements-title, .populaires-title {
     font-size: 1.375rem;
+    margin: 0;
 }
 
 /****** Hebergements ***********/
@@ -329,12 +336,11 @@ header {
 
 .activite-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     gap: 30px;
 }
 
 .activite-cards .activite-card {
-    width: 100%;
     height: 439px;
     border-radius: 20px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10);
@@ -350,14 +356,15 @@ header {
 
 .activite-card .activite-card-subtitle {
     font-size: 16px;
-    padding: 20px 19px 20px 19px;
-    background-color: var(--pur-white-color);
+    padding: 0 19px 20px 19px;
+    border-radius: 0 0 20px 20px;
+
 }
 
 /* footer */
 
 footer {
-    padding-top: 35px;
+    margin-top: 35px;
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -377,6 +384,7 @@ footer {
 }
 
 /****** Media queries ***********/
+
 
 @media screen and (min-width:1024px) and (max-width:1200px) {
     /* Ce media sert a regler le problème de déformation des grilles 
@@ -405,7 +413,11 @@ footer {
     }
 }
 
-
+@media screen and (min-width:768px) and (max-width:1302px) {
+    .activite-card .activite-card-subtitle {
+        font-size: 13px;
+    } 
+}
 
 @media screen and (min-width:1024px) {
     .info-group-search-button-mobile {
@@ -511,7 +523,7 @@ footer {
 
     .header-menu-btn {
         width: 50%;
-        border-bottom: 0.938rem;
+        border-bottom: 15px;
     }
 
     .header-menu-btn:hover {
