@@ -168,6 +168,7 @@ header {
     font-size: 17px;
 }
 
+
 .info-group-box-filter:hover {
     background-color: var(--filter-bg-color);
 }
@@ -444,6 +445,12 @@ footer {
     .info-group-box {
         flex-wrap: nowrap;
     }
+
+    .info-group-box-filter {
+        font-size: 15px;
+    }
+
+    
     
     /* hebergements-and-populaires */
     
@@ -541,10 +548,11 @@ footer {
         grid-template-columns: 1fr 2fr 1fr;
     }
     
+    
     .info-group-search-button-desktop {
         display: none;
     }
-
+    
     .info-group-search-button-mobile {
         width: 49px;
         height: 49px;
@@ -560,7 +568,6 @@ footer {
             color: var(--pur-white-color);
         }
 
-
         .info-group-filter {
             display: flex;
             flex-direction: column;
@@ -574,6 +581,7 @@ footer {
         }
 
        .info-group-box-filter {
+        font-size: 16px;
         align-self: center;
        }
 
